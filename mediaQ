@@ -1,0 +1,51 @@
+<!DOCTYPE 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> media query </title>
+
+    <style>
+        div.hide {
+            background-color: rgb(11, 0, 85);
+            padding : 30px;
+            width: 20% ;
+
+        }
+
+        @media screen and ( max-width:800px) {
+            div.hide {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width :1200px ){
+            div.red {
+                background-color: rgb(63, 0, 12);
+                width: 20%;
+                height: 20%;
+            }
+            
+        }
+
+        @media screen and ( min-width:1250px){
+            div.last {
+                font-size: 30px;
+                background-color: yellow;
+            }
+        }
+
+        /*.container {
+            background-color: rgb(227, 107, 107);
+            padding: 50px;
+        } */
+        </style>
+
+        <body>
+            <h2> EXAMPLE </h2>
+                <div class="hide" > hide this example </div>
+            </div>
+
+            <div class="red" > this is the color red </div>
+        </body>
+</head>
+</html>
